@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@types/styled-components": "^5.1.12",
-    "expo": "~42.0.1",
+    "expo": "^42.0.3",
+    "expo-google-fonts": "^0.0.0",
     "expo-status-bar": "~1.0.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -19,5 +20,8 @@
     "react-native-web": "~0.13.12",
     "styled-components": "^5.3.0"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "metro": "^0.59.0"
+  }
 }

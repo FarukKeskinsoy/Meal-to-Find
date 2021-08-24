@@ -10,10 +10,10 @@ flex:1;
 ${StatusBar.currentHeight && `margin-top:${StatusBar.currentHeight}px`};
 `;
 const SearchContainer=styled.View`
-padding:16px;
+padding:${(props)=>props.theme.space[3]};
 `;
 const RestaurantListContainer=styled.View`
-padding:16px;
+padding:${(props)=>props.theme.space[3]};
 flex:1;
 `;
 
