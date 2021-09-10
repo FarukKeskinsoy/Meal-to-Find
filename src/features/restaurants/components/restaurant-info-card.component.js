@@ -5,16 +5,6 @@ import { Spacer } from "../../../components/spacer/spacer.component";
 import { Text } from "../../../components/typography/text.component";
 import star from "../../../../assets/star";
 import open from "../../../../assets/open";
-
-
-
-/*import React from 'react'
-import star from "../../../../assets/star";
-import {Open,Icona} from '../../../../assets/star';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import { Text } from "../../../components/typography/text.component";
-import { Spacer } from '../../../components/spacer/spacer.component';
-import { SvgXml } from "react-native-svg";*/
 import {
     RestaurantCard,
     RestaurantCardCover,
