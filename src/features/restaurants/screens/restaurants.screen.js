@@ -11,7 +11,8 @@ import { ActivityIndicator, Colors } from "react-native-paper";
 import { Spacer } from "../../../components/spacer/spacer.component";
 import { Search } from "../components/search.component";
 import { FavouritesBar } from "../../../components/favourites/favourites-bar.component";
-
+import { RestaurantList } from "../components/restaurant-list.styles";
+import { FadeInView } from "../../../components/animations/fade.animation";
 
 
 
@@ -23,11 +24,6 @@ const RestaurantListContainer = styled.View`
   flex: 1;
   padding: ${(props) => props.theme.space[3]};
 `;
-const RestaurantList = styled(FlatList).attrs({
-  contentContainerStyle: {
-    padding: 16,
-  },
-})``;
 
 const Loading = styled(ActivityIndicator)`
   margin-left: -25px;
@@ -63,7 +59,9 @@ export const RestaurantsScreen = ({navigation}) => {
           return (
             <TouchableOpacity onPress={()=>navigation.navigate("RestaurantDetail",{restaurant:item,})}>
               <Spacer position="bottom" size="large">
+                <FadeInView>
                 <RestaurantInfoCard restaurant={item} />
+                </FadeInView>
               </Spacer>
             </TouchableOpacity>
             
